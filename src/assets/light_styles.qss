@@ -1,0 +1,130 @@
+#centralWidget {
+  background-color: #f3f3f3;
+}
+#appTitle {
+  color: black;
+  font-size: 56px;
+}
+QLineEdit {
+  background-color: #fbfbfb;
+  color: black;
+  border: 1px solid #d5d5d5;
+  border-bottom: 1px solid #bebebe;
+
+  height: 42px;
+  font-size: 26px;
+  padding: 4px 8px 2px 8px;
+  border-radius: 6px;
+}
+QLineEdit::focus {
+  border-bottom-color: #1490df;
+}
+QListWidget {
+  background-color: #f3f3f3;
+  color: #505050;
+  border: 1px solid #d5d5d5;
+
+  height: 100px;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+}
+QListWidget::item {
+  background-color: #f3f3f3;
+  color: #909090;
+  padding: 4px 8px;
+  border-radius: 8px;
+  outline: none;
+}
+QListWidget::item:selected {
+  color: black;
+  background: none;
+}
+QListWidget::item:hover {
+  color: black;
+}
+#resultContainer {
+  background-color: #f3f3f3;
+}
+QScrollArea {
+  border: none;
+}
+QGroupBox {
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 24px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
+}
+QGroupBox::title {
+  color: #888888;
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 4px 0;
+  left: 0;
+}
+#resultContainer QPushButton {
+  font-size: 24px;
+  border: 1px solid #d5d5d5;
+  color: black;
+  background-color: none;
+  margin: 2px 5px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+}
+#resultContainer QPushButton:pressed {
+  background-color: #a1cde9;
+}
+
+#resultContainer QPushButton:focus {
+  color: #1490df;
+  border-color: #1490df;
+}
+
+QScrollBar:vertical {
+  background: #f3f3f3;
+  width: 12px;
+}
+QScrollBar::handle:vertical {
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+  background-color: #f3f3f3;
+  background: none;
+}
+QScrollBar:horizontal {
+  background-color: #f3f3f3;
+  height: 12px;
+}
+QScrollBar::handle:horizontal {
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+  background-color: #f3f3f3;
+}
+QAbstractScrollArea::corner {
+  background-color: transparent;
+  border: none;
+}
+QStatusBar {
+  background: #f3f3f3;
+  color: #171717;
+  font-size: 17px;
+}
+#settings_button {
+  color: #888888;
+  background-color: transparent;
+  font-size: 17px;
+  padding: 1px;
+  border: none;
+  outline: none;
+}
+#settings_button::focus {
+  color: black;
+  outline:none;
+}

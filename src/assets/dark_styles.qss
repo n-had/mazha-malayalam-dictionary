@@ -1,0 +1,131 @@
+#centralWidget {
+  background-color: #202020;
+}
+#appTitle {
+  color: #ededed;
+  font-size: 56px;
+}
+
+QLineEdit {
+  background-color: #2d2d2d;
+  color: #ededed;
+  border: 1px solid rgba(45, 45, 45, 0.80);
+  border-bottom: 1px solid #404040;
+
+  height: 42px;
+  font-size: 26px;
+  padding: 4px 8px 2px 8px;
+  border-radius: 6px;
+}
+QLineEdit::focus {
+  /* border-bottom-color: #3ac2ff; */
+  border-bottom-color: #1490df;
+}
+QListWidget {
+  background-color: #202020;
+  color: #888888;
+  border: 1px solid #404040;
+
+  height: 100px;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+}
+QListWidget::item {
+  background-color: #202020;
+  color: #888888;
+  padding: 4px 8px;
+  border-radius: 8px;
+  outline: none;
+}
+QListWidget::item:selected {
+  color: white;
+  background: none;
+}
+QListWidget::item:hover {
+  color: white;
+}
+#resultContainer {
+  background-color: #202020;
+}
+QScrollArea {
+  border: none;
+}
+QGroupBox {
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 24px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
+}
+QGroupBox::title {
+  color: #888888;
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 4px 0;
+  left: 0;
+}
+#resultContainer QPushButton {
+  font-size: 24px;
+  border: 1px solid #404040;
+  color: #ededed;
+  background-color: none;
+  margin: 2px 5px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+}
+#resultContainer QPushButton:pressed {
+  background-color: #303030;
+}
+
+#resultContainer QPushButton:focus {
+  border-color: #ededed;
+}
+
+QScrollBar:vertical {
+  background: #202020;
+  width: 12px;
+}
+QScrollBar::handle:vertical {
+  background-color: #555;
+  border-radius: 6px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+  background-color: #202020;
+  background: none;
+}
+QScrollBar:horizontal {
+  background-color: #202020;
+  height: 12px;
+}
+QScrollBar::handle:horizontal {
+  background-color: #555;
+  border-radius: 6px;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+  background-color: #202020;
+}
+QAbstractScrollArea::corner {
+  background-color: transparent;
+  border: none;
+}
+QStatusBar {
+  background-color: #202020;
+  color: white;
+  font-size: 17px;
+}
+#settings_button {
+  color: #666666;
+  background-color: transparent;
+  font-size: 17px;
+  padding: 1px;
+  border:none;
+  outline:none;
+}
+#settings_button::focus {
+  color: white;
+  outline: none;
+}
