@@ -15,7 +15,12 @@ It is based on the [Olam](https://olam.in) open-source dictionary and built usin
 
 > **Note**: The application is currently in the alpha stage and is supported only on Windows.
 
-## Installation
+## Screenshots
+![Screeenshot-1](assets/screenshot-1.png)
+![Screeenshot-2](assets/screenshot-2.png)
+
+## Setting Up and Running the Application
+
 ### It is recommended to use a virtual environment to manage dependencies:
 ```shell
 python -m venv venv
