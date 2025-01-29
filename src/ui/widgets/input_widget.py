@@ -36,10 +36,12 @@ class InputWidget(QWidget):
         if text.strip():
             suggestions = self.dictionary_data.get_suggestions(text)
             if suggestions:
+                self.suggestions_list.clear()
                 self.suggestions_list.show()
-            self.suggestions_list.clear()
-            self.suggestions_list.addItems(suggestions)
-            self.suggestions_list.setCurrentRow(0)
+                self.suggestions_list.addItems(suggestions)
+                self.suggestions_list.setCurrentRow(0)
+            else:
+                self.suggestions_list.hide()
         else:
             self.suggestions_list.clear()
             self.suggestions_list.hide()

@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QMainWindow, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QApplication
 from PySide6.QtGui import QIcon
 from ui.widgets.input_widget import InputWidget
 from ui.widgets.result_widget import ResultWidget
@@ -59,3 +59,14 @@ class MainWindow(QMainWindow):
             system_theme = get_system_theme()
             self.setStyleSheet("")
             self.apply_theme(system_theme)
+    
+    def center_window(self):
+        # Get the screen's available geometry
+        screen_geometry = QApplication.primaryScreen().availableGeometry()
+        window_geometry = self.geometry()
+        # Calculate x and y to center the window
+        x = (screen_geometry.width() - window_geometry.width()) // 2
+        y = (screen_geometry.height() - window_geometry.height()) // 2
+        # Move the window to the calculated position
+        self.move(x, y)
+

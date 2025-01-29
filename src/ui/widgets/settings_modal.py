@@ -44,6 +44,7 @@ class SettingsModal(QDialog):
             self,
         )
         creator.setWordWrap(True)
+        creator.linkActivated.connect(self.open_link)
         info_container_layout.addWidget(creator)
         
         version = QLabel("v0.1.0", self)

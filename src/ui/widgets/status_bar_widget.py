@@ -6,7 +6,7 @@ class StatusBarWidget(QStatusBar):
     def __init__(self, apply_theme, parent=None):
         super().__init__(parent)
         self.apply_theme = apply_theme
-        self.settings_button = QPushButton("⛭ Settings")
+        self.settings_button = QPushButton(" ⛭ Settings")
         self.settings_button.setObjectName("settings_button")
         self.settings_button.clicked.connect(self.show_settings_modal)
         self.addWidget(self.settings_button)
